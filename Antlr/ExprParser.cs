@@ -13,7 +13,7 @@ namespace Antlr
     {
         public static ExprListener ParseText(String text)
         {
-            AntlrInputStream inputStream = new AntlrInputStream(text.ToString());
+            AntlrInputStream inputStream = new AntlrInputStream(text);
             ExprLexer lexer = new ExprLexer(inputStream);
             CommonTokenStream commonTokenStream = new CommonTokenStream(lexer);
             ExprParser parser = new ExprParser(commonTokenStream);

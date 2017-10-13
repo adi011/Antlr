@@ -19,7 +19,7 @@ namespace Antlr
 
         public override void EnterSentence([NotNull] ExprParser.SentenceContext context)
         {
-            SentenceCount++;   
+            SentenceCount++;
         }
         
     }
