@@ -13,8 +13,8 @@ sentence
 	;
 
 word
-	: simple_word |
-	  number;
+	: number 
+	| simple_word;
 
 simple_word
 	: LETTER+;
@@ -34,7 +34,7 @@ SPACE
 NEW_LINE
 	: '\n' | '\r\n';
 DIGIT
-	: '1..9';
+	: '0'..'9';
 
 LETTER
 	:  .;
